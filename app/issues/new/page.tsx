@@ -5,7 +5,7 @@ import React from 'react'
 
 const NewIssuePage = () => {
   return (
-    <div className='max-w-xl space-x-3'>
+    <div className='max-w-xl space-y-6'>
         <TextField.Root>
             <TextField.Input placeholder='Title'/>
         </TextField.Root>
