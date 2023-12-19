@@ -49,4 +49,8 @@ const IssuesPages = async () => {
   );
 };
 
+export const dynamic = 'force-dynamic'
+// export const revelidate = 60
+
+
 export default IssuesPages;
