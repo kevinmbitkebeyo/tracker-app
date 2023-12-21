@@ -14,6 +14,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { AiFillBug, AiFillBank } from "react-icons/ai";
+import Skeleton from "react-loading-skeleton";
+import Spinner from "./components/Spinner";
 
 const NavBar = () => {
 
@@ -64,7 +66,7 @@ const NavLinks = ()=>{
 const AuthStatus = () => {
   const { status, data: session } = useSession();
 
-  if (status === "loading") return null
+  if (status === "loading") return <Spinner/>
   if (status === "unauthenticated") return <Link className="nav-link" href="/api/auth/signin">Login</Link>
 
 
