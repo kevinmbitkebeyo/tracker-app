@@ -12,9 +12,7 @@ import classNames from "classnames";
 import { useSession } from "next-auth/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React from "react";
-import { AiFillBug, AiFillBank } from "react-icons/ai";
-import Skeleton from "react-loading-skeleton";
+import { AiFillBank } from "react-icons/ai";
 import Spinner from "./components/Spinner";
 
 const NavBar = () => {
